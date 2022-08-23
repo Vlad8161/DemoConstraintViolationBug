@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>org.example.test-plugin</id>
+    <name>Test</name>
+    <vendor email="mail@example.com" url="https://example.com">Example company</vendor>
+
+    <description><![CDATA[Description description description description]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>org.jetbrains.android</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <extensions defaultExtensionNs="com.android.project">
+        <projectsystem implementation="com.example.ProjectSystemImplementation"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
